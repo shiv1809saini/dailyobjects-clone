@@ -1,0 +1,18 @@
+.featured-in {
+  background-color: #f7f6f4;
+  padding: 56px 24px;
+}
+
+.featured-in__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+}
+
+.featured-in__logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #999;
+}

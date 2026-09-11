@@ -1,0 +1,123 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  gap: 24px;
+}
+
+.navbar__logo {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  text-transform: lowercase;
+}
+
+.navbar__logo strong {
+  font-weight: 700;
+}
+
+.navbar__links ul {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar__links a {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #1a1a1a;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navbar__links a:hover {
+  color: #e63946;
+}
+
+.navbar__icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar__icon-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 17px;
+  padding: 4px;
+}
+
+.navbar__cart-count {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background: #e63946;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.navbar__hamburger span {
+  width: 20px;
+  height: 2px;
+  background: #1a1a1a;
+}
+
+@media (max-width: 900px) {
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .navbar__links--open {
+    max-height: 400px;
+  }
+
+  .navbar__links ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 24px 16px;
+  }
+
+  .navbar__links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+}

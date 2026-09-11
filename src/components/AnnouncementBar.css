@@ -1,0 +1,27 @@
+.announcement-bar {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.announcement-bar__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.announcement-bar__item {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .announcement-bar__item:not(:first-child) {
+    display: none;
+  }
+}
